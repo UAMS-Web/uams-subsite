@@ -1,0 +1,192 @@
+/*
+ Theme Name:     UAMS Subsite Template
+ Author:         Todd McKee, MEd
+ Author URI:     http://www.uams.edu
+ Template:       Divi
+ Version:        0.1
+*/
+
+
+/* ----------- PUT YOUR CUSTOM CSS BELOW THIS LINE -- DO NOT EDIT ABOVE THIS LINE --------------------------- */
+
+/* Helper Classes */
+.center-text {text-align: center;}
+.right-text {text-align: right;}
+.left-text {text-align: left;}
+
+.align-left {float: left;}
+.align-right {float: right;}
+
+.visible-phone{display:none !important}
+.visible-tablet{display:none !important}
+.visible-desktop{display:inherit !important}
+span.visible-desktop{display:inline !important}
+.hidden-desktop{display:none !important}
+@media (min-width: 768px) and (max-width: 979px){
+	.visible-tablet{display:inherit !important}
+	span.visible-tablet{display:inline !important}
+	.hidden-tablet{display:none !important}
+	.hidden-desktop{display:inherit !important}
+	span.hidden-desktop{display:inline !important}
+	.visible-desktop{display:none !important}
+}
+@media (max-width: 767px){
+	.visible-phone{display:inherit !important}
+	span.visible-phone{display:inline !important}
+	.hidden-phone{display:none !important}
+	.hidden-desktop{display:inherit !important}
+	span.hidden-desktop{display:inline !important}
+	.visible-desktop{display:none !important}
+}
+
+/* Site Settings */
+.container, .et_pb_row, .et_pb_slider .et_pb_container, .et_pb_fullwidth_header .et_pb_fullwidth_header_container, .et_pb_fullscreen .et_pb_fullwidth_header_container, .single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper, et_pb_pagebuilder_layout.single-post #page-container .et_pb_with_background .et_pb_row, .et_pb_pagebuilder_layout.single.et_full_width_page #page-container .et_pb_row, .et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container .et_pb_row, .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content, .et_pb_fullwidth_section .et_pb_title_container, .et_pb_fullwidth_section .et_pb_title_featured_container  { width:92%;}
+
+/* Header */
+.logo-container { float:right; margin-top:-18px; margin-bottom: -3px; padding: 4px; text-align: right; }
+.logo_flag { background-color: #9D2235; padding: 18px 6px 16px; vertical-align: baseline;}
+#top-header { border-top: 3px solid #9D2235; }
+#main-header, #et-main-area { margin-top: 3px; } /* make up for top border */
+#et-main-area #main-content .et_pb_section.et_pb_fullwidth_section.header-home { margin-top: -48px; z-index: 1000; } /* Under header and over action-bar */
+#et-info { float: none; padding-bottom: 0; text-align: right; line-height: 2em; }
+#et-info-phone { font-weight: bold; font-size: 18px; }
+
+#site-title { float:left; max-width: 400px; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; }
+#site-title h1 { color:#9D2235; font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif; padding-bottom: 0; text-align: left;}
+#site-title a { display:block; }
+#sec-navigation {float: right; max-width: 400px; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d;}
+#sec-navigation li a { font-size: 18px; display: block; font-weight: 700; }
+#et-top-navigation {clear: both;}
+.vert-align { position: relative; top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#sec-navigation .et-social-icons li, #sec-navigation .et-social-icons { margin-left: 10px; }
+#sec-navigation .et-social-facebook a.icon:before { content: "\e0c1";}
+#sec-navigation .et-social-facebook a { font-size: 24px; color: #3b5998; }
+#sec-navigation .et-social-twitter a.icon:before { content: "\e0c2"; }
+#sec-navigation .et-social-twitter a { font-size: 24px; color: #00aced; }
+
+/* Mega Menu Changes */
+#top-menu li li a { min-width: 200px; width: auto; }
+#top-menu li.mega-menu li li a { font-size: 16px; color: #444; font-weight: normal; }
+#top-menu li.mega-menu > ul > li > a:first-child { border-bottom-color: rgba(0,0,0,0.1); }
+#top-menu .menu-item-has-children > a:first-child:after, #et-secondary-nav .menu-item-has-children > a:first-child:after { content: "\4c"; color: #555;}
+#top-menu .menu-item-has-children.et-show-dropdown > a:first-child:after, #et-secondary-nav .menu-item-has-children.et-show-dropdown > a:first-child:after { content: "\4b"; }
+
+/* Action Bar */
+.action-bar { border: 1px solid #f1f1f1; }
+.action-bar .et_pb_row { position: relative; text-align: center; background-color: #fff; margin-top: -20px; border-top: 3px solid #9D2235; z-index: 1000; }
+.action-bar .et_pb_blurb {display: inline-block; padding: 15px 10px; width: 16%; }
+.action-bar .et_pb_blurb .et-pb-icon {font-size:48px;}
+.action-bar .et_pb_blurb .et-pb-icon { color: #9A9899 !important; }
+.action-bar .et_pb_blurb .et-pb-icon:hover { color:#9D2235 !important; }
+.action-bar .et_pb_blurb .et_pb_blurb_container h4 { margin-bottom: 10px; }
+.action-bar .et_pb_blurb .et_pb_blurb_container h4 a { color:#9D2235; }
+.action-bar .et_pb_blurb .et_pb_main_blurb_image {margin-bottom:10px;}
+
+
+/* Footer */
+#footer-bottom .container {text-align: center; margin: 0 auto;}
+#main-footer .footer-helper { position: relative; overflow: hidden;}
+#main-footer .footer-helper:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.12;
+    background-image: url('http://www.uams.edu/_template/images/fountain-background.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#main-footer .footer-helper div { z-index:2; }
+#main-footer .footer-widget h4 { line-height: 22px; }
+#main-footer .textwidget {line-height: 1.4em; }
+#footer-widgets .footer-widget ul { list-style: initial; padding-left: 1.4em; line-height: 1.2em; padding-top: 1em; }
+#footer-info { width: 100%; text-align: center;}
+#et-footer-nav .container {text-align: center;}
+#et-footer-nav h4 {color: #fff; padding-top: 2em;}
+#et-footer-nav h3 {color: #fff; padding-top: 1em;}
+#et-footer-nav .et-social-icons {float: none; color:#fff;}
+#et-footer-nav .et-social-icon a {font-size: 18px; color: rgba(255,255,255,0.85);}
+.footer-widget .et-pb-icon { font-size: 18px; color:#fff; }
+.footer-widget .et_pb_blurb h4, .footer-widget .et_pb_blurb h4 a { font-size: 14px; color:#fff; padding-top: 2px; font-family: 'Open Sans', Arial, sans-serif; font-weight: normal;}
+.footer-widget .et_pb_blurb { margin-bottom: 6px; }
+.footer-widget .et_pb_widget a { color:#fff; }
+.footer-widget .et_pb_widget a:hover { color:#f2f2f2; }
+.footer-widget .tribe-mini-calendar-event { border-bottom-color: #aaa; }
+#footer-widgets .footer-widget .footer-menu ul { padding: 0; list-style: none; }
+#footer-widgets .footer-widget .footer-menu li a:before {
+	content: "\f0da";
+    padding-right: 1em;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive Hooks */
+@media only screen and (min-width: 980px) {
+/* 	.header-home { padding-top: 164px; } */
+    /* Set the slider height */
+    .header-home .et_pb_slider, .header-home .et_pb_slider .et_pb_container {
+        height: 500px !important;
+    }
+    .header-home .et_pb_slider, .header-home .et_pb_slider .et_pb_slide {
+        max-height: 500px;
+    }
+    .header-home .et_pb_slider .et_pb_slide_description {
+        position: relative;
+        top: 25%;
+        padding-top: 0 !important;
+        padding-bottom:0 !important;
+        height:auto !important;
+    }
+
+}
+@media (max-width: 980px) {
+	#sec-navigation .et-social-icons, #et-info { float: right; }
+	#site-title a { top:auto; transform: none; padding-bottom: 10px; }
+	#main-footer .et-social-icons { margin:0; }
+	#et-main-area #main-content .et_pb_section.et_pb_fullwidth_section.header-home { margin-top: 0px; }
+	.et_pb_section.action-bar { padding: 10px 0 0; }
+	.et_secondary_nav_only_menu #top-header { display: block; }
+	.logo-container { margin-top: 0; }
+	.et_non_fixed_nav.et_transparent_nav_temp #main-header, .et_secondary_nav_only_menu #main-header, .et_fixed_nav_temp #main-header, .et_secondary_nav_only_menu #main-header { top: 36px !important; }
+	.et_non_fixed_nav.et_transparent_nav.et_secondary_nav_only_menu.admin-bar #main-header, .et_fixed_nav.et_secondary_nav_only_menu.admin-bar #main-header { top: 70px !important;}
+	#et-info { padding-top: 0; }
+}
+@media (max-width: 767px){
+	#site-title { max-width: 100%; }
+	.et_header_style_centered header#main-header .logo_container { width: 100%;}
+	#site-title h1 { text-align: center; }
+	#et-info {display: none;}
+	#top-header .logo-container { float: none; margin-left: auto; margin-right: auto; text-align: center; }
+	.action-bar .et_pb_row { margin-top: -3px;}
+	.et_pb_section.action-bar { padding: 0; }
+	.action-bar { margin-top: 12px; }
+	.action-bar .et_pb_blurb { width: 120px; }
+}
+@media (max-width: 600px){
+
+}
+@media (max-width: 480px) {
+
+}
+@media (max-width: 400px) {
+	.et_header_style_centered #logo { max-width: 260px; }
+}
